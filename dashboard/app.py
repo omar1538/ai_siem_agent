@@ -39,7 +39,7 @@ if submitted:
     with st.spinner("AI Agent is investigating the alert..."):
         try:
             response = requests.post(
-                "http://localhost:8000/investigate",
+                "http://0.0.0.0:8000/investigate",
                 json={
                     "alert_type": alert_type,
                     "source_ip": source_ip,
